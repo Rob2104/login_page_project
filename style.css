@@ -1,6 +1,6 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f0f2f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3e9dc; /* light beige background */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,43 +9,62 @@ body {
 }
 
 .login-container {
-  background-color: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  background-color: #fff8f0; /* very light cream */
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  border: 2px solid #d2b48c; /* light brown border */
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: #5c4033; /* dark brown */
+  font-weight: bold;
 }
 
 label {
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
   font-weight: bold;
+  color: #4e3629; /* coffee brown */
 }
 
 input {
   width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  padding: 12px;
+  margin-bottom: 18px;
+  border: 1px solid #b08968; /* medium brown */
+  border-radius: 8px;
+  background-color: #fff;
+  font-size: 15px;
+}
+
+input:focus {
+  outline: none;
+  border: 1.5px solid #7b3f00; /* darker brown focus */
+  background-color: #fdf6f0;
 }
 
 button {
   width: 100%;
-  padding: 10px;
-  background-color: #007bff;
+  padding: 12px;
+  background-color: #8b5e3c; /* warm brown */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.1s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #6f4e37; /* coffee brown */
+  transform: scale(1.03);
+}
+
+button:active {
+  background-color: #5c4033; /* darker brown */
 }
